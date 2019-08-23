@@ -35,7 +35,7 @@ function serveFile(path, res, statusCode) {
 //create server
 http.createServer(function (req, res) {
     if (req.url === '/') {
-        return serveFile('/static/test.html', res);
+        return serveFile('/static/index.html', res);
     }
     if (req.url.includes('/static')) {
         return serveFile(req.url, res)
